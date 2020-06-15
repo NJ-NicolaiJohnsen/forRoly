@@ -1,0 +1,38 @@
+.list-items-div {
+    padding: 20px 0px 0px 100px;
+    display: inline-block;
+    
+}
+
+.list-items-div li {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    list-style-type: decimal-leading-zero;
+    line-height: 50px;
+    position: relative;
+}
+
+.isCompleted {
+    
+    display: block;
+    position: absolute;
+    background: black;
+    height: 1px;
+    width: 330%;
+    top: 27px;
+}
+
+.delete {
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    left: 120%;
+    cursor: pointer;
+    bottom: -15px;
+}
+
+.completed {
+    position: absolute;
+    bottom: -12px;
+    left: 130%;
+}

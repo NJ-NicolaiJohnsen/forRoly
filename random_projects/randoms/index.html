@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Trying stuff</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="gallery">
+            <button class="left">left</button>
+            <button class="right">right</button>
+            <div class="gallery_wrap">
+                <div onclick="currentSlide(0)" class="img-div"><img src="../pictures/chris-liverani-HUJDz6CJEaM-unsplash@2x.png"></div>
+                <div onclick="currentSlide(1)" class="img-div"><img src="../pictures/davids-kokainis-rJzPRuCjLRk-unsplash.png" alt="" srcset=""></div>
+                <div onclick="currentSlide(2)" class="img-div"><img src="../pictures/henrik-hjortshoj-7DWnTxE-XY0-unsplash-1.png"></div>
+                <div onclick="currentSlide(3)" class="img-div"><img src="../pictures/ralph-blvmberg--EXF9shcTO0-unsplash.png"></div>
+                <div onclick="currentSlide(4)" class="img-div"><img src="../pictures/matthew-dockery-s99-JP8P3Hg-unsplash@2x.png"></div>
+            </div>
+        </div>
+        
+        <div class='modal'>
+            <div class="modal-exit"></div>
+            <div class="modal-content-wrap">
+                <div class="modal-content">
+                    <div class="btn btn-left">&lArr;</div>
+                    <div class="btn btn-right">&rArr;</div>
+                    <img src="../pictures/background-1.png" alt="">
+                    <img src="../pictures/background.png" alt="">
+                    <img src="../pictures/henrik-hjortshoj-7DWnTxE-XY0-unsplash-1@2x.png" alt="">
+                    <img src="../pictures/ralph-blvmberg--EXF9shcTO0-unsplash@2x.png" alt="">
+                    <img src="../pictures/davids-kokainis-rJzPRuCjLRk-unsplash@2x.png" alt="">
+                    <img src="../pictures/matthew-dockery-s99-JP8P3Hg-unsplash-1@2x.png" alt="">
+                    <img src="../pictures/daniel-minarik-6CSSkz0fx0E-unsplash-5@2x.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="random-wrap">
+            <div class="random animate">
+                <img class="myImg" src="../pictures/henrik-hjortshoj-7DWnTxE-XY0-unsplash-1@2x.png" alt="">
+                <img class="myImg" src="../pictures/ralph-blvmberg--EXF9shcTO0-unsplash@2x.png" alt="">
+                <img class="myImg" src="../pictures/davids-kokainis-rJzPRuCjLRk-unsplash@2x.png" alt="">
+                <img class="myImg" src="../pictures/matthew-dockery-s99-JP8P3Hg-unsplash-1@2x.png" alt="">
+                <img class="myImg" src="../pictures/daniel-minarik-6CSSkz0fx0E-unsplash-5@2x.png" alt="">
+            </div>
+            <div class="random_btn">left</div>
+            <div class="random_btn">right</div>
+        </div>
+
+        <script src="index.js" async defer></script>
+    </body>
+</html>

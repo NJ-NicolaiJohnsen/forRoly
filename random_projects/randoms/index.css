@@ -1,0 +1,154 @@
+* {
+    padding: 0px;
+    margin: 0;
+}
+
+.gallery {
+    width: 500px;
+    margin: 15% auto auto auto;
+    position: relative;
+    transform: skewX(-8deg) translateX(30px);
+}
+
+.gallery_wrap {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.img-div {
+    min-width: 250px;
+    height: 300px;
+    overflow: hidden;
+    z-index: 50;
+}
+
+.img-div img {
+    height: 100%;
+    width: 120%;
+    transform: skewX(8deg) translateX(-20px);
+    cursor: pointer;
+}
+
+button {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    padding: 10px;
+    background: blue;
+    border: 1px solid red;
+}
+
+.right {
+    right: 0;
+}
+
+.img-div:hover {
+    background: #ffffff6f;
+}
+
+.img-div img:hover {
+    mix-blend-mode: screen;
+}
+
+.modal-exit {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #0005;
+  
+    z-index: 100;
+    display: none;
+}
+
+.modal-content-wrap {
+    position: relative;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 120;
+}
+
+.modal-content {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.modal-content img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    display: block;
+}
+
+.btn {
+    padding: 10px;
+    background: #00000055;
+    font-size: 50px;
+    line-height: 50px;
+    z-index: 5;
+    top: calc(50% - 25px);
+    color: white;
+    position: absolute;
+    transition: background 0.5s;
+    user-select: none;
+}
+
+.btn:hover {
+    background: #000000aa;
+    cursor: pointer;
+}
+
+.btn-right {
+    right: 0;
+}
+
+.myImg {
+    width: 500px;
+   float: left;
+   padding: 5px;
+   box-sizing: border-box;
+}
+
+.random {
+    width: max-content;
+    transition: transform 0.5s;
+}
+
+.random-wrap {
+    width: 500px;
+    margin: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+.random_btn {
+    position: absolute;
+    top: 500px;
+    padding: 20px;
+    background: blue;
+    border: 1px solid red;
+
+}
+
+.random_btn:last-of-type {
+    right: 0;
+}
