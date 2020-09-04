@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main_profile-page {
+  margin: auto;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header_profile-page {
+  display: flex;
+}
+
+.back-arrow {
+  display: inline-block;
+  position: relative;
+  margin: 25px;
+  width: 20px;
+  height: 2px;
+  background-color:rgb(29, 161, 242);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-arrow::before {
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -2px;
+  transform: rotate(-45deg);
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: rgb(29, 161, 242);
+  border-radius: 5px;
+}
+
+.back-arrow::after {
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: -2px;
+  transform: rotate(45deg);
+  content: "";
+  width: 10px;
+  height: 2px;
+  background: rgb(29, 161, 242);
+  border-radius: 5px;
+}
+
+.header_name-container{
+  margin-top: 5px;
+}
+
+.profile_name {
+  font-weight: 900;
+}
+
+.profile_tweet-score {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(101, 119, 134);
+  line-height: 18px;
+}
+
+.bg-image {
+  width: 100%;
+  z-index: 1;
+}
+
+.bg-image img {
+  max-width: 598px;
+  max-height: 165px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.profile_userbio-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile_image-wrap {
+  width: 25%;
+  height: 44%;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  margin-top: -12%;
+  margin-left: 3%;
+  z-index: 10;
+}
+
+.profile_image-wrap img {
+  width: 150%;
+  transform: translateX(-10%);
+}
+
+
+/*
+.profile_userbio-svg {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(29, 161, 242);
+  margin: 0 5px;
+}
+
+.profile_userbio-svg path {
+  color: rgb(29, 161, 242);
+  fill: currentColor;
+}
+*/
+
+.btn_profile-setup {
+  margin-right: 3%;
+  margin-top: 5px;
+}
+
+.basic-btn {
+  border: 1px solid rgb(29, 161, 242);
+  background-color: white;
+  border-radius: 1000px;
+  line-height: 0;
+  font-size: 15px;
+  font-weight: 900;
+  color: rgb(29, 161, 242);
+  padding: 1.2em;
+  height: 0;
+
+  transition: background-color 200ms;
+}
+
+.basic-btn:hover {
+  background-color: rgba(29, 161, 242, 0.11);
+  cursor: pointer;
+}
+
+.twitter-handle {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(101, 119, 134);
+  line-height: 18px;
+
+}
+
+.bio_text {
+  margin: 5px 0;
+}
+
+.bio_info path, .bio_info circle {
+  color: #657786;
+  fill: currentColor;
+}
